@@ -1,0 +1,30 @@
+.footer__address {
+    margin-top: 20px;
+    font-style: normal;
+}
+
+.footer-address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-address__link {
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: var(--address-text-color);
+
+    &--color {
+            color: var(--button-text-color);
+            transition: color 250ms var(--cubic-bezier);
+        }
+
+    &:hover {
+        color: var(--accent-color);
+        transition: color 250ms var(--cubic-bezier);
+    }
+
+    &:focus {
+        color: var(--accent-color);
+        transition: color 250ms var(--cubic-bezier);
+    }
+}

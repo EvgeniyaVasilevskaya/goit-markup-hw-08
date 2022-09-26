@@ -1,0 +1,42 @@
+@import './utils/variables';
+@import './utils/hidden';
+@import './components/base';
+
+@import './components/container';
+@import './components/section';
+
+// Header
+
+@import './components/logo';
+@import './components/header';
+@import './components/contacts';
+
+// Studia
+
+@import './components/hero';
+
+@import './components/preference';
+
+@import './components/service';
+
+@import './components/team';
+@import './components/socials';
+
+@import './components/customers';
+
+@import './components/footer';
+@import './components/footer__address';
+@import './components/networks';
+@import './components/subscribe';
+
+// Portfolio
+
+@import './components/filter';
+@import './components/project';
+
+// Modal
+
+@import './components/modal';
+
+
+

@@ -1,0 +1,32 @@
+.service__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.service__item {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.service__relative {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+
+    background: rgba(47, 48, 58, 0.8);
+}
+
+.service__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--button-text-color);
+}
