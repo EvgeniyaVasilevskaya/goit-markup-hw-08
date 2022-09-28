@@ -1,10 +1,22 @@
 .container {
-    width: 1200px;
+
+width: 480px;
     padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
 
-    &__adress {
-            flex-grow: 1;
-        }
+@media screen and (min-width: 768px) {
+        max-width: 720px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+    }
+
+
+        
+}
+
+.container__adress {
+    flex-grow: 1;
 }

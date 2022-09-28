@@ -17,11 +17,7 @@
 
   transition: 250ms var(--cubic-bezier);
 
-  &:hover {
-    fill: var(--button-text-color);
-    border-radius: 50%;
-    background: var(--accent-color);
-  }
+  &:hover,
   &:focus {
     fill: var(--button-text-color);
     border-radius: 50%;

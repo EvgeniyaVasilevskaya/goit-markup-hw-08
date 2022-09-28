@@ -22,12 +22,7 @@
 
   transition: fill 250ms var(--cubic-bezier), border 250ms var(--cubic-bezier);
 
-  &:hover {
-    fill: var(--accent-color);
-    border-color: var(--accent-color);
-  }
-
-  &:focus {
+  &:hover, &:focus {
     fill: var(--accent-color);
     border-color: var(--accent-color);
   }

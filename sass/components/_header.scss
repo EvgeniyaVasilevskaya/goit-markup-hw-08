@@ -29,14 +29,8 @@
 
   transition: color 250ms var(--cubic-bezier);
 
-  &:hover {
-    color: var(--accent-color);
-  }
-  
-  &:focus {
-    color: var(--accent-color);
-  }
-
+  &:hover,
+  &:focus,
   &--active {
     color: var(--accent-color);
   }
