@@ -1,12 +1,29 @@
 .project {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  width: 100%;
+  
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+  }
+  
 }
 
 .project__item {
-  width: 370px;
+  margin-bottom: 30px;
+
+  width:100%;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+      margin-bottom: 0;
+  }
+  
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+      flex-basis: calc((100% - 60px) / 3);
+  
+    }
 }
 
 .project__link {

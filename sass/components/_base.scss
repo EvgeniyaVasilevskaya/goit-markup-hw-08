@@ -26,3 +26,11 @@ p {
     margin: 0;
     padding: 0;
 }
+
+header, footer, section {
+    display: none;
+}
+
+.block {
+    display: block;
+}

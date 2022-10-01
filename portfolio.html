@@ -27,10 +27,11 @@
         <nav class="nav">
           <a href="./index.html" class="logo">Web<span class="logo--black">Studio</span></a>
           <ul class="header__list">
+            <li class="header__item"> <a href="./index.html" class="header__link">Студія</a></li>
             <li class="header__item">
-              <a href="./index.html" class="header__link">Студія</a></li>
-            <li class="header__item">
-              <a href="./portfolio.html" class="header__link current header__link--active">Портфоліо</a></li
+              <a href="./portfolio.html" class="header__link current header__link--active"
+                >Портфоліо</a
+              ></li
             >
             <li class="header__item"><a href="" class="header__link">Контакти</a></li>
           </ul>
@@ -55,7 +56,7 @@
     </header>
 
     <main>
-      <section class="section">
+      <section class="section block">
         <div class="container">
           <h1 class="hidden">Проекти</h1>
           <ul class="filter">
@@ -70,13 +71,30 @@
             <li class="project__item">
               <a class="project__link" href="">
                 <div class="project__box">
-                  <img
-                    class="project-box__image"
-                    src="./images2/img1.jpg"
-                    alt="екран ноутбука"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images2/filter_desktop/img-1_lg@1x.jpg 1x,
+                        ./images2/filter_desktop/img-1_lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images2/filter_tablet/img-1_md@1x.jpg 1x,
+                        ./images2/filter_tablet/img-1_md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images2/filter_mobile/img-1_sm@1x.jpg 1x,
+                        ./images2/filter_mobile/img-1_sm@1x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img class="project-box__image" src="./images2/img1.jpg" alt="екран ноутбука" />
+                  </picture>
                   <div class="project-box__overlay">
                     <p class="project-box__text--overlay"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -94,13 +112,34 @@
             <li class="project__item">
               <a class="project__link" href="">
                 <div class="project__box">
-                  <img
-                    class="project-box__image"
-                    src="./images2/img2.jpg"
-                    alt="два баскетболісти"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images2/filter_desktop/img-2_lg@1x.jpg 1x,
+                        ./images2/filter_desktop/img-2_lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images2/filter_tablet/img-2_md@1x.jpg 1x,
+                        ./images2/filter_tablet/img-2_md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images2/filter_mobile/img-2_sm@1x.jpg 1x,
+                        ./images2/filter_mobile/img-2_sm@1x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="project-box__image"
+                      src="./images2/img2.jpg"
+                      alt="два баскетболісти"
+                    />
+                  </picture>
                   <div class="project-box__overlay">
                     <p class="project-box__text--overlay"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -118,13 +157,34 @@
             <li class="project__item">
               <a class="project__link" href="">
                 <div class="project__box">
-                  <img
-                    class="project-box__image"
-                    src="./images2/img3.jpg"
-                    alt="логотип ресторана"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images2/filter_desktop/img-3_lg@1x.jpg 1x,
+                        ./images2/filter_desktop/img-3_lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images2/filter_tablet/img-3_md@1x.jpg 1x,
+                        ./images2/filter_tablet/img-3_md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images2/filter_mobile/img-3_sm@1x.jpg 1x,
+                        ./images2/filter_mobile/img-3_sm@1x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="project-box__image"
+                      src="./images2/img3.jpg"
+                      alt="логотип ресторана"
+                    />
+                  </picture>
                   <div class="project-box__overlay">
                     <p class="project-box__text--overlay"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -142,13 +202,30 @@
             <li class="project__item">
               <a class="project__link" href="">
                 <div class="project__box">
-                  <img
-                    class="project-box__image"
-                    src="./images2/img4.jpg"
-                    alt="навушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images2/filter_desktop/img-4_lg@1x.jpg 1x,
+                        ./images2/filter_desktop/img-4_lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images2/filter_tablet/img-4_md@1x.jpg 1x,
+                        ./images2/filter_tablet/img-4_md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images2/filter_mobile/img-4_sm@1x.jpg 1x,
+                        ./images2/filter_mobile/img-4_sm@1x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img class="project-box__image" src="./images2/img4.jpg" alt="навушники" />
+                  </picture>
                   <div class="project-box__overlay">
                     <p class="project-box__text--overlay"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -166,13 +243,30 @@
             <li class="project__item">
               <a class="project__link" href="">
                 <div class="project__box">
-                  <img
-                    class="project-box__image"
-                    src="./images2/img5.jpg"
-                    alt="коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images2/filter_desktop/img-5_lg@1x.jpg 1x,
+                        ./images2/filter_desktop/img-5_lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images2/filter_tablet/img-5_md@1x.jpg 1x,
+                        ./images2/filter_tablet/img-5_md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images2/filter_mobile/img-5_sm@1x.jpg 1x,
+                        ./images2/filter_mobile/img-5_sm@1x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img class="project-box__image" src="./images2/img5.jpg" alt="коробки" />
+                  </picture>
                   <div class="project-box__overlay">
                     <p class="project-box__text--overlay"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -190,13 +284,34 @@
             <li class="project__item">
               <a class="project__link" href="">
                 <div class="project__box">
-                  <img
-                    class="project-box__image"
-                    src="./images2/img6.jpg"
-                    alt="монітор комп'ютера"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images2/filter_desktop/img-6_lg@1x.jpg 1x,
+                        ./images2/filter_desktop/img-6_lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images2/filter_tablet/img-6_md@1x.jpg 1x,
+                        ./images2/filter_tablet/img-6_md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images2/filter_mobile/img-6_sm@1x.jpg 1x,
+                        ./images2/filter_mobile/img-6_sm@1x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="project-box__image"
+                      src="./images2/img6.jpg"
+                      alt="монітор комп'ютера"
+                    />
+                  </picture>
                   <div class="project-box__overlay">
                     <p class="project-box__text--overlay"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -214,13 +329,30 @@
             <li class="project__item">
               <a class="project__link" href="">
                 <div class="project__box">
-                  <img
-                    class="project-box__image"
-                    src="./images2/img7.jpg"
-                    alt="Журнал"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images2/filter_desktop/img-7_lg@1x.jpg 1x,
+                        ./images2/filter_desktop/img-7_lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images2/filter_tablet/img-7_md@1x.jpg 1x,
+                        ./images2/filter_tablet/img-7_md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images2/filter_mobile/img-7_sm@1x.jpg 1x,
+                        ./images2/filter_mobile/img-7_sm@1x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img class="project-box__image" src="./images2/img7.jpg" alt="Журнал" />
+                  </picture>
                   <div class="project-box__overlay">
                     <p class="project-box__text--overlay"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -238,13 +370,30 @@
             <li class="project__item">
               <a class="project__link" href="">
                 <div class="project__box">
-                  <img
-                    class="project-box__image"
-                    src="./images2/img8.jpg"
-                    alt="етикетка"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images2/filter_desktop/img-8_lg@1x.jpg 1x,
+                        ./images2/filter_desktop/img-8_lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images2/filter_tablet/img-8_md@1x.jpg 1x,
+                        ./images2/filter_tablet/img-8_md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images2/filter_mobile/img-8_sm@1x.jpg 1x,
+                        ./images2/filter_mobile/img-8_sm@1x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img class="project-box__image" src="./images2/img8.jpg" alt="етикетка" />
+                  </picture>
                   <div class="project-box__overlay">
                     <p class="project-box__text--overlay"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -262,13 +411,34 @@
             <li class="project__item">
               <a class="project__link" href="">
                 <div class="project__box">
-                  <img
-                    class="project-box__image"
-                    src="./images2/img9.jpg"
-                    alt="Людина друкує на ноутбуці"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images2/filter_desktop/img-9_lg@1x.jpg 1x,
+                        ./images2/filter_desktop/img-9_lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images2/filter_tablet/img-9_md@1x.jpg 1x,
+                        ./images2/filter_tablet/img-9_md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images2/filter_mobile/img-9_sm@1x.jpg 1x,
+                        ./images2/filter_mobile/img-9_sm@1x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="project-box__image"
+                      src="./images2/img9.jpg"
+                      alt="Людина друкує на ноутбуці"
+                    />
+                  </picture>
                   <div class="project-box__overlay">
                     <p class="project-box__text--overlay"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
