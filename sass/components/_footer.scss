@@ -1,10 +1,33 @@
 .footer {
-    background: var(--footer-background);
-    padding-top: 60px;
-    padding-bottom: 60px;
+  background: var(--footer-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0;
 }
 
 .footer-container {
+
+  @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
+  }
+}
+
+.footer__box-table {
+  margin-bottom: 60px;
+
+@media screen and (min-width: 768px) {
+display: flex;
+align-items: baseline;
+justify-content: center;
+gap: 165px;
+}
+
+@media screen and (min-width: 1200px) {
+  display: flex;
+  align-items: baseline;
+  flex-grow: 1;
+gap: 0;
+  margin-bottom: 0;
+}
 }

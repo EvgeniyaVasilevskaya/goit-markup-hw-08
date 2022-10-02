@@ -1,11 +1,13 @@
 .container {
-  max-width: 480px;
   padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  
+  @media screen and (min-width: 480px) {
+      max-width: 480px;
+    }
 
   @media screen and (min-width: 768px) {
-    max-width: 720px;
+    max-width: 768px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -14,5 +16,16 @@
 }
 
 .container__adress {
-  flex-grow: 1;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+      flex-grow: 1;
+      margin-bottom: 0;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      flex-grow: 0;
+      margin-bottom: 0;
+      // margin-right: 70px;
+    }
 }

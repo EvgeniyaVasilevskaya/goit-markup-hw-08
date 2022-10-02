@@ -1,5 +1,14 @@
 .container-networks {
-  margin-left: 70px;
+text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+      
+    }
+  
+    @media screen and (min-width: 1200px) {
+      margin-left: 70px;
+    }
+  
 }
 
 .container-networks__title {
@@ -10,6 +19,12 @@
   text-transform: uppercase;
   color: var(--button-text-color);
   margin-bottom: 20px;
+
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
 }
 
 .networks {
