@@ -1,5 +1,5 @@
 .contacts__link {
-    display: inline-flex;
+    display: flex;
     align-items: center;
 
     font-weight: 500;
@@ -15,8 +15,25 @@
         color: var(--accent-color);
         fill: var(--accent-color);
     }
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            font-size: 12px;
+        }
 }
 
 .contacts__icon {
     margin-right: 10px;
+}
+
+.contacts__item {
+    margin-bottom: 10px;
+    
+        &:last-child {
+            margin-bottom: 0;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 0;
+        }
+    
 }

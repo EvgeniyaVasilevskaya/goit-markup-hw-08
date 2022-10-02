@@ -7,6 +7,26 @@
     display: flex;
 }
 
+.container__mob {
+  display: none;
+  
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      align-items: center;
+      gap: 97px;
+  
+      margin-left: auto;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      margin-left: 92px;
+    }
+
+}
+
 .header__list {
   display: flex;
   gap: 50px;
@@ -54,7 +74,17 @@
 .header__contacts {
   display: flex;
   margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  gap: 50px;
+
+@media screen and (min-width: 768px) {
+    flex-direction: column;}
+
+  @media screen and (min-width: 1200px) {
+    // display: flex;
+    //   margin-left: auto;
+    //   padding-top: 32px;
+    //   padding-bottom: 32px;
+    //   gap: 50px;
+    flex-direction: row;
+  }
+
 }
