@@ -662,6 +662,11 @@ p {
   text-transform: uppercase;
   color: var(--title-text-color);
 }
+@media screen and (min-width: 768px) {
+  .preference__title {
+    text-align: left;
+  }
+}
 
 .preference__text {
   line-height: 1.7142857143;
