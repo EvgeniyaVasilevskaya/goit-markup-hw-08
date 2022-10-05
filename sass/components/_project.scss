@@ -12,7 +12,9 @@
 .project__item {
   margin-bottom: 30px;
 
-  width:100%;
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 30px) / 2);
@@ -27,7 +29,9 @@
 }
 
 .project__link {
-  display: block;
+      display: flex;
+        flex-direction: column;
+        height: 100%;
   text-decoration: none;
 
   &:hover,
@@ -77,6 +81,8 @@
   border-left: 1px solid var(--border-color-portfolio);
   border-bottom: 1px solid var(--border-color-portfolio);
   border-right: 1px solid var(--border-color-portfolio);
+
+  flex-grow: 1;
 }
 
 .project-box__title {
